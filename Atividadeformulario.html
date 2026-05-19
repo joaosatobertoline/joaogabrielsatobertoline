@@ -1,0 +1,146 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: ______________________
+
+Descrição: Formulário HTML5.
+
+Data: __/__/____
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <p>O formulario de cadastro deve ser desenvolvido aqui</p>
+
+            <form id="formCadastro">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+                    <p>E-mail:</p>
+                    <input type="email" id="email" name="email" required placeholder="email">
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                    <p>Informações</p>
+                    <p>Gênero:</p>
+                    <input type="radio" name="Gênero" id=”Mas” value="Masculino">
+                    <label for=”mas”>Masculino</label>
+                    <input type="radio" name="Gênero" id=”Fem” value="Feminino">
+                    <label for=”fem”>Feminino</label>
+                    <input type="radio" name="Gênero" id=”Out” value="Outro">
+                    <label for=”out”>Outro</label>
+
+                    <hr>
+
+                    <input type="checkbox" name="Interesses" id=”Tec” value="Tecnologia">
+                    <label for=”Tec”>Tecnologia</label>
+                    <input type="checkbox" name="Interesses" id=”Esp” value="Esporte">
+                    <label for=”Esp”>Esporte</label>
+                    <input type="checkbox" name="Interesses" id=”Mus” value="Música">
+                    <label for=”Mus”>Música</label>
+                    <input type="checkbox" name="Interesses" id=”Jog” value="Jogo">
+                    <label for=”Jog”>Jogo</label>
+
+                    <hr>
+
+                    <p>Estado:</p>
+                    <select>
+                   <option>Selecione</option>
+                   <option>Acre</option>
+                   <option>Alagoas</option>
+                   <option>Amapá</option>
+                   <option>Amazonas</option>
+                   <option>Bahia</option>
+                   <option>Ceará</option>
+                   <option>Distrito Federal</option>
+                   <option>Espírito Santo</option>
+                   <option>Goiás</option>
+                   <option>Maranhão</option>
+                   <option>Mato Grosso</option>
+                   <option>Mato Grosso do Sul</option>
+                   <option>Minas Gerais</option>
+                   <option>Pará</option>
+                   <option>Paraíba</option>
+                   <option>Paraná</option>
+                   <option>Pernambuco</option>
+                   <option>Piauí</option>
+                   <option>Rio de Janeiro</option>
+                   <option>Rio Grande do Norte</option>
+                   <option>Rio Grande do Sul</option>
+                   <option>Rondônia</option>
+                   <option>Roraima</option>
+                   <option>Santa Catarina</option>
+                   <option>São Paulo</option>
+                   <option>Sergipe</option>
+                   <option>Tocantins</option>
+                    </select>
+
+                    <hr>
+
+                    <p>Mensagem:</p>
+                    <textarea rows="3" cols="25"></textarea>
+
+                    <p>Upload de imagem:</p>
+                    <input type="file">
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                  </fieldset>
+            </form>
+        </section>
+    
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentações">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
